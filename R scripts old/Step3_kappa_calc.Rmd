@@ -1,0 +1,24 @@
+---
+title: "Untitled"
+output: html_document
+date: "2023-03-22"
+---
+
+```{r}
+library(irr)
+library(psych)
+library(data.table)
+df<-fread('/Users/pokor076/My Drive/Pokorny Specials Meta-analysis/review spreadsheets/kappa decisions final articles.csv')
+df_pro = dplyr::select(df,VJP,CDT,SDK)
+kappam.fleiss(df_pro)
+cohen.kappa(x = df_pro)
+
+```
+
+```{r}
+#compute weighted average
+ns <- c(50, 50, 100, 111)
+kappas <- c(.7,.9,.74,.85)
+sum(ns * kappas ) / sum(ns)
+```
+
