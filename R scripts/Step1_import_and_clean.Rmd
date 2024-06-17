@@ -6,14 +6,16 @@ date: "2023-03-01"
 
 ```{r}
 library(revtools)
-#remove_dissertations = 1
-##remove_conference = 1
-#remove_duplicates = 1
-#remove_reviews = 1
-data <- read_bibliography("OVID_output.ris")
-#screen_duplicates(data)
+ovid_output_name <- "OVID_output_revision_keywords" # should be either OVID_output 
+                                                        # or OVID_output_revision_keywords
+data <- read_bibliography(paste0(ovid_output_name,'.ris'))
 initial_n <- nrow(data)
+
 #count number of articles from each source (MEDLINE, EMBASE and Psychinfo)
+#OVID changed some of the way that metadata is handled so we will use different
+#methods for the original vs. revision search
+#we'll start with original search
+if (ovid_output_name == 'OVID_output' ){
 #EMBASE = 'emed'
 #psychinfo = 'psyc'
 #medline is everything else
@@ -22,7 +24,18 @@ medline
 psyc<-sum(grepl('psyc',data$l2))
 psyc
 embase<-nrow(data)-(medline + psyc)
-embase
+embase}
+if (ovid_output_name == 'OVID_output_revision_keywords'){
+  medline<- sum(grepl('MEDLINE',data$DB))
+  psyc <- sum(grepl('APA',data$DB))
+  embase <- sum(grepl('Embase',data$DB))
+  print(paste0(medline,' articles from medline'))
+  print(paste0(psyc,' articles from psychinfo'))
+  print(paste0(embase,' articles from embase'))
+  #just checking to see if they add up to initial_n
+  medline + psyc + embase == initial_n
+}
+
 
 
 #15 seems like a good threshold
@@ -33,52 +46,78 @@ matches <- find_duplicates(data,
                            threshold = 15)
 
 data_nodup <- extract_unique_references(data, matches)
-
-dups_removed <- initial_n - nrow(data_nodup)
-dups_removed
+dups_count <- initial_n - nrow(data_nodup)
 
 #now get rid of poster abstracts
 data_nodup_noconf<-data_nodup[!grepl('uppl', data_nodup$issue,ignore.case = TRUE) &
                              !grepl('conference|congress',
                                     data_nodup$journal_secondary,ignore.case = TRUE),]
-conference_stuff<-data_nodup[grepl('uppl', data_nodup$issue,ignore.case = TRUE) ,]
+poster_count <- nrow(data_nodup) - nrow(data_nodup_noconf)
+#again have to treat the original and revision differently due to differences in metadata
 
-reviews<-data_nodup_noconf[grepl('review',data_nodup_noconf$PT, 
+if (ovid_output_name == 'OVID_output_revision_keywords'){
+  data_nodup_noconf_norev <- data_nodup_noconf[data_nodup_noconf$PT!="Review",]
+} else if (ovid_output_name == 'OVID_output'){
+  data_nodup_noconf_norev<-data_nodup_noconf[!grepl('review',data_nodup_noconf$PT, 
                                                  ignore.case = TRUE),]
-data_nodup_noconf_norev<-data_nodup_noconf[!grepl('review',data_nodup_noconf$PT, 
-                                                 ignore.case = TRUE),]
+}
+reviews_count <- nrow(data_nodup_noconf) - nrow(data_nodup_noconf_norev)
+
 final_data<-data_nodup_noconf_norev[!grepl('dissertation', 
                                                         data_nodup_noconf_norev$journal,
                                                  ignore.case = TRUE),]
-dissertations<-data_nodup_noconf_norev[grepl('dissertation', 
-                                                        data_nodup_noconf_norev$journal,
-                                                 ignore.case = TRUE),]
+dissertations_count <-nrow(data_nodup_noconf_norev) - nrow(final_data)
 
-print(paste0(length(dissertations$label),' dissertations detected'))
-print(paste0(length(reviews$label),' reviews detected'))
-print(paste0(length(conference_stuff$label),' conference posters/papers detected'))
+print(paste0(dups_count,' duplicates detected and removed'))
+print(paste0(poster_count,' posters detected and removed'))
+print(paste0(reviews_count,' reviews detected and removed'))
+#maybe we want to look at dissertations later, but let's not worry about it for now
+print(paste0(dissertations_count,' dissertations detected and removed'))
 
 final_n = nrow(final_data)
 print(paste0(final_n,' left after automatic cleaning'))
 
-write_bibliography(final_data,"OVID_output_cleaned.ris" )
+write_bibliography(final_data,paste0(ovid_output_name,"_cleaned.ris"))
+
+
+# now let's see how much overlap there is between the original and revised search
+original_papers <- read_bibliography(paste0('OVID_output_cleaned.ris'))
+revision_papers <- read_bibliography(paste0('OVID_output_revision_keywords_cleaned.ris'))
+
+new_papers <- setdiff(revision_papers$title, original_papers$title)
+new_papers_to_review <- revision_papers[match(new_papers, revision_papers$title),]
+
+n_overlapping<-nrow(revision_papers)-length(new_papers)
+print(paste0(n_overlapping,' overlapping articles between the two searches'))
+
 
 #now let's rearrange columns a bit for convenience when reviewing
-col_idx<-seq(1,length(final_data))
+review_versions <- c('original', 'revised')
+for (j in review_versions){
+  if (j == 'original'){
+    final_data <- original_papers
+    col_idx<-seq(1,length(final_data))
+    #this makes title first
+    col_idx[c(1,3)]<-col_idx[c(3,1)]
+    #this makes abstract second
+    col_idx[c(2,6)]<-col_idx[c(6,2)]
+    #let's do keywords third  
+    col_idx[c(3,7)]<-col_idx[c(7,3)]
+  }else {
+    final_data <- new_papers_to_review
+    col_idx<-seq(1,length(final_data))
+    #this makes title first
+    col_idx[c(1,3)]<-col_idx[c(3,1)]
+    #this makes abstract second
+    col_idx[c(2,7)]<-col_idx[c(7,2)]
+    #let's do keywords third  
+    col_idx[c(3,8)]<-col_idx[c(8,3)]
+  }
+csv_data <- final_data[,col_idx]
+write.csv(csv_data,paste0('../review spreadsheets/OVID_output_cleaned_',j,'.csv'),row.names = FALSE)
+}
 
-#this makes title first
-col_idx[c(1,3)]<-col_idx[c(3,1)]
 
-#this makes abstract second
-col_idx[c(2,6)]<-col_idx[c(6,2)]
-
-#let's do keywords third  
-col_idx[c(3,7)]<-col_idx[c(7,3)]
-csv_data<-final_data[,col_idx]
-
-#lets throw out some unuseful columns
-csv_data <- subset(csv_data, select = -c(type,label))
-#write.csv(csv_data,'../review #spreadsheets/OVID_output_cleaned.csv',row.names = FALSE)
 
 
 ```

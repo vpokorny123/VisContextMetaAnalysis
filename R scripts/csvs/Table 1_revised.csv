@@ -1,0 +1,165 @@
+Table 1. Studies Comparing People with Schizophrenia and Controls,,,,,,,,,,,,,
+Title,Authors (Year),Paradigm,Primary Dep. Variable,Groups,N (N female),Medication Status,"Inpatient
+or
+Outpatient","Chronic or 
+First Episode?",Minimum Acuity Threshold,Target Stimulus Location (Foveal or Peripheral),Finding,Data used for computing effect size,Effect Size (Hedges' G)
+Size Perception,,,,,,,,,,,,,
+Size Constancy in Psychopathology,Harway & Salzman (1964),Size Constancy,Behavior,SCZ,21 (21),Not specified,Inpatient,Not specified,20/20,Foveal,SCZ < CON (except in condition with the most contextual cues),NA (relevant statistics/data not reported),NA
+,,,,CON,35 (35),,,,,,,,
+Size Constancy of Adolescent Schizophrenics,MacDorman et al. (1964),Size Constancy,Behavior,SCZ,10 (0),Not specified,Outpatient,Not specified,20/20,Foveal,SCZ > CON,t(18) = 5.43,-2.326
+,,,,CON,10 (0),,,,,,,,
+Integrated assessment of visual perception abnormalities in psychotic disorders and relationship with clinical characteristics,Turkozer et al. (2019),Ball in the Hall,Behavior,SCZ,28 (10),Not specified,Not specified,Not specified,20/25,Foveal,SCZ = CON,"F(1,57) = 1.96",-0.36
+,,,,CON,31 (16),,,,,,,,
+Grasping behavior in schizophrenia suggests selective impairment in the dorsal visual pathway,King et al. (2008),Delbeouf (square frame variant),Behavior,SCZ,42 (16),Medicated,Outpatient,Chronic ,20/20,Foveal,SCZ = CON ,NA (relevant statistics/data not reported),NA
+,,,,CON,42 (23),,,,,,,,
+Size estimation in paranoid and nonparanoid schizophrenics: A test of the stimulus redundancy formulation interpretation,Asarnow & Mann (1978),Ebbinghaus,Behavior,SCZ,30 (6),Not specified,Inpatient,Chronic,20/40,Foveal,Nonparanoid SCZ < CON at 4000ms viewing duration,NA (No statistics are reported for comparing the paranoid + non-paranoid groups relative to controls.),NA
+,,,,CON,15 (5),,,,,,,,
+Perceptual grouping in disorganized schizophrenia,Uhlhaas et al. (2006),Ebbinghaus (other tasks reported but not ineligiblefor inclusion),Behavior,SCZ (disorganized + non-disorganized),35 (6),Medicated,Inpatient,Chronic,Not specified,Foveal,SCZ = CON,NA (relevant statistics/data not reported),NA
+,,,,Psychiatric CON,35 (14),Not specified,Mixed,Not specified,,,,,
+Theory of mind and perceptual context-processing in schizophrenia,Uhlhaas et al. (2006),Ebbinghaus,Behavior,SCZ (chronic + episodic),48 (not specified),Medicated,Mixed,Chronic,Not specified,Foveal,SCZ = CON,NA (relevant statistics/data not reported),NA
+,,,,Psychiatric CON,26 (10),Not specified,Mixed,Not specified,,,,,
+Effects of short-term inpatient treatment on sensitivity to a size contrast illusion in first-episode psychosis and multiple-episode schizophrenia,Silverstein et al. (2013),Ebbinghaus,Behavior,SCZ,21 (5),Medicated,Inpatient,Mixed,20/20,Foveal,SCZ < CON ( for first timepoint not including first-episode psychosis),NA (the only relevant statistics are Welch's t which cannot be easily converted to Cohen's D),NA
+,,,,CON,27 (13),,,,,,,,
+Stimulus redundancy and schizophrenia,Cromwell (1968),Mueller-Lyer,Behavior,SCZ (paranoid + non-paranoid),30 (0),Medicated,Inpatient,Chronic,Not specified,Foveal,"Paranoid SCZ > CON, but non-paranoid SCZ = CON.",NA (relevant statistics/data not reported),NA
+,,,,CON,15 (0),,,,,,,,
+Mueller-Lyer illusion and size estimation performance in schizophrenics compared to normal controls,Rund et al. (1994),Mueller Lyer,Behavior,SCZ,35 (11),Mixed,Inpatient,Mixed,Not specified,Foveal,SCZ = CON,"SCZ = -28.5 (9)
+CON = -23.9 (8.2)",-0.52
+,,,,CON,20 (10),,,,,,,,
+Information processing in schizophrenia and bipolar disorder: a discriminant analysis,Tam et al. (1998),Mueller Lyer,Behavior,SCZ,26 (13),Not specified,Inpatient,Not specified,Not specified,Foveal,SCZ > CON,"SCZ = 70.74 (8.54)
+CON = 58.27 (6.29)",-1.523
+,,,,CON,10 (5),,,,,,,,
+Visual binding abilities in the initial and advanced stages of schizophrenia,Parnas et al. (2001),"Mueller-Lyer (other tasks are also reported, but none manipulated visuospatial context)",Behavior,SCZ (chronic + initial),19 (8),Mixed,Inpatient,Mixed,20/20,Foveal,SCZ > CON,NA (relevant statistics/data not reported),NA
+,,,,CON,14 (8),,,,,,,,
+Orientation Perception,,,,,,,,,,,,,
+Self-monitoring in schizophrenia: Weighting exteroceptive visual signals against self-generated vestibular cues,Seymour & Kaliuzhna (2022),Tilt Illusion,Behavior,SCZ,19 (6),Medicated,Not specified,Chronic,20/20,Foveal,SCZ = CON,"SCZ: 3.8 (2.2)
+CON: 4.2 (2.3)",0.163
+,,,,CON,19 (3),,,,,,,,
+Symptom severity is associated with leftward lateralization upon contextual modulation of visual vertical in patients with schizophrenia,Razzak et al. (2022),Rod and Frame,Behavior,SCZ,15 (4),Mixed,Inpatient,Not specified,Not specified,Foveal,Unsigned Errors: SCZ > CON,"F(1,30) = 6.37",-0.872
+,,,,CON,17 (5),,,,,,Signed Errors: SCZ = CON,"F(1,30) = 0.67",-0.283
+Contrast Perception: Orientation-Independent ,,,,,,,,,,,,,
+Weak suppression of visual context in chronic schizophrenia,Dakin et al. (2005),Contrast-Contrast Illusion,Behavior,SCZ,15 (not specified),Mixed,Inpatient,Chronic,Not specified,Foveal,SCZ < CON,t(46) = –6.12,1.875
+,,,,CON (psychiatric + non-psychiatric),33 (not specified),Mixed,Not specified,Not specified,,,,,
+The clinical translation of a measure of gain control: The Contrast-Contrast Effect Task,Barch et al. (2012),Contrast-Contrast Illusion,Behavior,SCZ,132 (60),Not specified,Outpatient,Not specified,Not specified,Foveal,SCZ < CON (but insignificant when excluding individuals who performed poorly on catch trials),"F(1,260) = 7.27 ",0.332
+,,,,CON,130 (48),,,,,,,,
+Temporal stability and moderating effects of age and sex on CNTRaCS task performance,Strauss et al. (2014),Contrast-Contrast Illusion,Behavior,SCZ,98 (43),Not specified,Outpatient,Chronic,Not specified,Foveal,SCZ = CON,d = .13,0.13
+,,,,CON,131 (64),,,,,,,,
+Contrast Perception: Orientation-Dependent ,,,,,,,,,,,,,
+Reduced facilitation effect of collinear flankers on contrast detection reveals impaired lateral connectivity in the visual cortex of schizophrenia patients,Must et al. (2004),Collinear Flankers,Behavior,SCZ,20 (8),Unmedicated,Outpatient,Not specified,20/20,Foveal,Main effect of group: NA (does not control for baseline contrast sensitivty),NA,NA
+,,,,CON,15 (4),,,,,,Group by orientation: SCZ < CON,"F(1,33) = 13.95",1.247
+"Anomalous visual experiences, negative symptoms, perceptual organization and the magnocellular pathway in schizophrenia: A shared construct?",Keri et al. (2005),Collinear Flankers (Other tasks reported but did not manipulate visuospatial context),Behavior,SCZ,35 (12),Unmedicated,Not specified,Not specified,20/20,Foveal,Main effect of group: NA (does not control for baseline contrast sensitivty),NA,NA
+,,,,CON,20 (8),,,,,,Group by orientation: SCZ < CON,"Orthogonal-Parallel Difference Scores
+SCZ: -.07 (.18)
+CON: -.31 (.17)",1.36
+Attentional modulation of perceptual organisation in schizophrenia,Keri et al. (2009),Collinear Flankers,Behavior,SCZ,43 (15),Mixed,Outpatient,Not specified,Not specified,Foveal,Main effect of group: NA (does not control for baseline contrast sensitivty),NA,NA
+,,,,CON,25 (6),,,,,,Group by orientation: SCZ < CON,"F(1, 66)= 47.49",1.713
+Multiple forms of contour grouping deficits in schizophrenia: What is the role of spatial frequency?,Keane et al. (2014),Collinear Flankers,Behavior,SCZ,24 (10),Medicated,Mixed,Not specified,Matched groups,Foveal,Main effect of group: NA,"NA (main effect F(1,45)=7.52  is reported but the main effect does not control for baseline contrast sensitivity) ",NA
+,,,,CON,24 (13),,,,,,Group by orientation : SCZ = CON,"F(1,45)=0.253",0.143
+Smaller visual arrays are harder to integrate in schizophrenia: Evidence for impaired lateral connections in early vision,Keane et al. (2019),Collinear Flankers,Behavior,SCZ,38 (11),Mixed,Not specified,Mixed,20/32,Foveal,High Spatial Frequency: SCZ < CON,"F(1,86)=4.68",0.462
+,,,,CON,50 (22),,,,,,Low Spatial Frequency: SCZ = CON,"F(1,85)=2.71",0.351
+Diminished orientation-specific surround suppression of visual processing in schizophrenia,Yoon et al. (2009),Contrast-Contrast Orientation-Dependent Illusion (Center-Target-Surround Configuration),Behavior,SCZ,17 (5),Mixed,Outpatient,Mixed,Not specified,Peripheral (spanned 4.5-7.8°),Main effect of group: SCZ = CON,"F(1,35 =0.37)",0.196
+,,,,CON,20 (8),,,,,,Group by orientation: SCZ <CON,"F(1,35) = 8.93",0.965
+Altered contextual modulation of primary visual cortex responses in schizophrenia,Seymour et al. (2013),Contrast-Contrast Orientation-Dependent Illusion (Center-Target-Surround Configuration),BOLD,SCZ,18 (8),Mixed,Outpatient,Not specified,20/20,Peripheral: (spanned 1.8-4.01°),Main effect of group: SCZ = CON,V1: F < 1* (*F value imputed by randomly selecting number between 0 and 1),-0.223
+,,,,,,,,,,,,V2: F < 1*  ,-0.165
+,,,,,,,,,,,,V3: F < 1*  ,0.124
+,,,,CON,18 (8),,,,,,Group by orientation : SCZ < CON,"V1: F(1, 34) = 4.87",0.719
+,,,,,,,,,,,,"V2: F(1, 34) = 4.70",0.707
+,,,,,,,,,,,,"V3: F(1, 34)= 6.11",0.806
+Reduced visual surround suppression in schizophrenia shown by measuring contrast detection thresholds,Serrano-Pedraza et al. (2014),Contrast-Contrast Orientation-Dependent Illusion (4-Targets 1-Surround),Behavior,SCZ,21 (2),Medicated,Mixed,Not specified,20/20,Peripheral: (centered at 5°) ,Main effect of group: SCZ < CON,"F(1,43) = 22.69",1.398
+,,,,CON,24 (14),,,,,,Group by orientation: SCZ < CON,"F(1,43) = 13.25",1.069
+Reduced contextual effects on visual contrast perception in schizophrenia and bipolar affective disorder,Schallmo et al. (2015),Contrast-Contrast Orientation-Dependent Illusion,Behavior,SCZ,23 (5),Mixed,Outpatient,Not specified,20/20,Peripheral (centered at 2°),Main effect of group: SCZ < CON,Cohen’s d = 0.42,0.415
+,,,,CON,38 (15),,,,,,Group by orientation: NA,Not extractable for SCZ and HC only,NA
+Weakened untuned gain control is associated with schizophrenia while atypical orientation-tuned suppression depends on visual acuity,Pokorny et al. (2023),Contrast-Contrast Orientation-Dependent Illusion,Behavior,SCZ,31 (10),Mixed,Outpatient,Not specified,20/50,Peripheral (centered at 3°),Main effect of group: SCZ < CON,Cohen’s d = .87,0.862
+,,,,CON,29 (15),,,,,,Group by orientation (0° and 90° only): SCZ = CON,"F(1,58) = 4.20",0.523
+Contrast Perception: Distance-Dependent ,,,,,,,,,,,,,
+Lateral interactions in the visual cortex of patients with schizophrenia and bipolar disorder,Keri et al. (2005),Collinear Flankers (Distance-Dependent),Behavior,SCZ,24 (9),Mixed,Outpatient,Not specified,20/20,Foveal,Main effect of group: SCZ < CON,2λ condition: Cohen's d = 1.29,1.267
+,,,,,,,,,,,,3λ condition: Cohen's d = 1.41,1.385
+,,,,,,,,,,,,4λ condition: Cohen's d = 1.42,1.394
+,,,,,,,,,,,,6λ condition: Cohen's d = 1.25,1.228
+,,,,CON,20 (8),,,,,,,9λ condition: Cohen's d = .78,0.766
+,,,,,,,,,,,,12λ condition: Cohen's d = .45,0.442
+Motion Perception,,,,,,,,,,,,,
+Weakened center-surround interactions in visual motion processing in schizophrenia,Tadin et al. (2006),Size-Dependent Drifting Grating,Behavior,SCZ,16 (4),Medicated,Outpatient,Not specified,Not specified,Foveal,SCZ = CON,NA (F statistic of interest is not reported),NA
+,,,,CON,14 (6) ,,,,,,,,
+Altered center-surround motion inhibition in schizophrenia,Chen et al. (2008),Center-Surround Random Dot Patterns,Behavior,SCZ,24 (11),Mixed,Mixed,Not specified,Not specified,Foveal,SCZ > CON,"F(1,55) = 28.67",-1.495
+,,,,CON,33 (16),,,,,,,,
+Contour Perception,,,,,,,,,,,,,
+"Crowding, grouping, and gain control in schizophrenia",Roinishvili et al. (2015),Vernier Crowding,Behavior,SCZ,16 (3),Medicated,Mixed,Not specified,20/25,Foveal,SCZ = CON,"F(1,29)=0.02",0.05
+,,,,CON,15 (2),,,,,,,,
+Intact and deficient contextual processing in schizophrenia patients,Choung et al. (2022),"Vernier Crowding
+(also reported a Time-Dependent Vernier that is outside the scope of this review) ",Behavior,SCZ,15 (5),Not specified,Not specified,Not specified,20/20,Foveal,SCZ = CON,NA (relevant statistics/data not reported),NA
+,,,,CON,15 (5),,,,,,,,
+Abnormal contextual modulation of visual contour detection in patients with schizophrenia,Schallmo et al. (2013),Collinear Gabor Contour Task,Behavior,SCZ,25 (4),Mixed,Outpatient,Not specified,20/20,Peripheral (centered at 1.6°),Parallel Modulation: SCZ < CON,Cohen's d = .68,0.67
+,,,,CON,28 (14),,,,,,Orthogonal Modulation: SCZ = CON,Cohen's d = -.47,-0.463
+Reduced influence of perceptual context in schizophrenia: Behavioral and neurophysiological evidence,Pokorny et al. (2021),Collinear Gabor Contour Task,Behavior & EEG,SCZ,27 (4),Not specified,Outpatient,Not specified,20/40,Peripheral (centered at 1.6°),Behavior: SCZ < CON,"f(1,62) = 6.02",0.613
+,,,,,,,,,,,EEG P2: SCZ = CON,"f(1,62) = .56",0.186
+,,,,CON,37 (13),,,,,,EEG P3: SCZ = CON,"f(1,62) = 2.60",0.403
+Lightness Perception,,,,,,,,,,,,,
+No evidence for abnormal priors in early vision in schizophrenia,Kaliuzhna et al. (2019),Lightness Grid Illusion (note: authors report two other illusions that do not manipulate visuospatial context),Behavior,SCZ,19 (9),Medicated,Outpatient,Not specified,20/20,Foveal,Experiment 1a: SCZ = CON,Cohen's d = 0.22,0.216
+,,,,,,,,,,,Experiment 1b: SCZ = CON,"F(1,38) = 0.13",0.112
+,,,,CON,21 (10),,,,,,Experiment 1c: SCZ = CON,"F(1,37) = 0.04",0.062
+Multi-Domain Studies,,,,,,,,,,,,,
+Gestalt perception and local-global processing in high-functioning autism,Bolte et al. (2007),"Ebbinghaus
+Ponzo
+Muller-Lyer
+Poggendorf
+Hering",Behavior,SCZ,15 (0),Medicated,Inpatient,Not specified,Not specified,Foveal,SCZ < CON,"SCZ: 11.7 (2.8)
+CON: 8.4 (2.2)",1.275
+,,,,CON,15 (0),,,,,,,,
+Seeing the world dimly: The impact of early visual deficits on visual experience in schizophrenia,Kantrowitz et al. (2009),"Mueller-Lyer
+Ponzo
+Sanders
+Poggendorf",Behavior,SCZ,38* (5) *only 18 of 38 completed Sanders' and Ponzo,Medicated,Mixed,Not specified,20/30,Foveal,Mueller-Lyer: SCZ > CON,"F(1,64) = 10.9",-0.813
+,,,,,,,,,,,Poggendorff: SCZ = CON,"F(1,64) = 0.21",0.113
+,,,,CON,28* (12) *only 12 of 28 completed Sanders' and Ponzo,,,,,,Sander: SCZ = CON,"F(1,28) = 0.35",-0.215
+,,,,,,,,,,,Ponzo: SCZ < CON,"F(1,28) = 5.2",0.827
+Visual context processing in bipolar disorder: A comparison with schizophrenia,Yang et al. (2013),"Contrast-Contrast
+Simultaneous Contrast (i.e. Brightness/Lightness Induction)
+Motion-Motion Illusion
+Tilt Illusion
+Ebbinghaus",Behavior,SCZ,29 (19),Medicated,Not specified,Not specified,20/30,Foveal,Contrast: SCZ < CON,Cohen's d = 0.64,0.63
+,,,,,,,,,,,Lightness: SCZ = CON,Cohen's d = 0.31,0.305
+,,,,,,,,,,,Motion: SCZ = CON,Cohen's d = -0.11,-0.108
+,,,,CON,23 (12),,,,,,Orientation: SCZ = CON,Cohen's d = -0.43 ,-0.423
+,,,,,,,,,,,Size: SCZ = CON,Cohen's d = -0.11,-0.108
+Visual surround suppression in schizophrenia,Tibber et al. (2013),"Contrast-Contrast
+Simultaneous Contrast-Contrast (i.e. Brightness/Lightness Induction)
+Tilt Illusion
+Ebbinghaus",Behavior,SCZ,23 (8),Mixed,Mixed,Not specified,Not specified,Foveal,Contrast: SCZ < CON,Cohen's d = 0.68,0.669
+,,,,,,,,,,,Lightness: SCZ = CON,Cohen's d = -0.2,-0.197
+,,,,CON,24 (8),,,,,,Orientation: SCZ = CON,Cohen's d = .39,0.384
+,,,,,,,,,,,Size: SCZ < CON,Cohen's d = .52,0.512
+Reduced Crowding and Poor Contour Detection in Schizophrenia Are Consistent with Weak Surround Inhibition,Robol et al. (2013),"Collinear Gabor Contour Task
+Orientation Flankers Task",Behavior,SCZ,18 (6),Mixed,Not specified,Not specified,Not specified,Peripheral (average contour target and orientation targets centered at 3.2°),Contour: SCZ = CON,"F(1,34) = 1.08",0.346
+,,,,CON,18 (6),,,,,,Orientation: SCZ < CON ,"F(1,24 = 9.16)",1.187
+Is the perception of illusions abnormal in schizophrenia?,Grzeczkowski et al. (2018),"Experiment 1:
+Ebbinghaus
+Mueller-Lyer 
+Ponzo
+Ball in the Hall
+Simultaneous Contrast
+White's (Lightness) Illusion
+Tilt Illusion",Behavior,SCZ,19 (5),Mixed,Mixed,Not specified,20/25,Foveal,Ebbinghaus: SCZ=CON,Cohen's d = 0.02,0.02
+,,,,,,,,,,,Mueller-Lyer: SCZ=CON,Cohen's d = -0.27,-0.264
+,,,,,,,,,,,Ponzo: SCZ=CON,Cohen's d = 0.16,0.157
+,,,,,,,,,,,Ponzo-Hallway: SCZ=CON,Cohen's d = 0.11,0.108
+,,,,CON,19 (5),,,,,,Orientation: SCZ=CON,Cohen's d = 0.19,0.186
+,,,,,,,,,,,Lightness (Sim. Contrast): SCZ=CON,Cohen's d = 0.32,0.313
+,,,,,,,,,,,Lightness (White's): SCZ=CON,Cohen's d = -0.4,-0.392
+,,"Experiment 2:
+Ebbinghaus (EB, EBs, EBb)
+Mueller-Lyer (ML)
+Ponzo (PZ)
+Hallway Illusion (PZh)
+Simultaneous Contrast
+White's (Lightness) Illusion
+Tilt Illusion",Behavior,SCZ,59 (14),Mixed,Mixed,Not specified,20/25,Foveal,Ebbinghaus: SCZ=CON,Cohen's d = -.13,-0.129
+,,,,,,,,,,,Ebbinghaus-Small: SCZ=CON,Cohen's d = -.06,-0.06
+,,,,,,,,,,,Ebbinghaus-Big: SCZ=CON,Cohen's d = .16,0.159
+,,,,,,,,,,,Mueller-Lyer: SCZ=CON,Cohen's d = -.21,-0.208
+,,,,,,,,,,,Ponzo: SCZ=CON,Cohen's d = .18,0.179
+,,,,CON,54 (26),,,,,,Ponzo-Wide: SCZ=CON,Cohen's d = .12,0.119
+,,,,,,,,,,,Ponzo-Grid: SCZ=CON,Cohen's d = 0,0
+,,,,,,,,,,,Lightness (Sim. Contrast): SCZ < CON,Cohen's d = .43,0.427
+,,,,,,,,,,,Lightness (White's Illusion): SCZ=CON,Cohen's d = .07,0.07
+,,,,,,,,,,,Orientation: SCZ = CON,Cohen's d = -0.08,-0.079
+"Table is grouped by perceptual domain of the target stimulus. Within each domain, studies are grouped by domain type. Within domain type studies are sorted by year.  Effect sizes are coded such that positive effect sizes denote less sensitivity to context in SCZ and negative values denote more sensitivity to context in SCZ. Target stimulus location was coded as foveal if the participants were alllowed to freely view the stimuli and coded as peripheral if participants fixated away from the target stimuli.  λ = wavelength. Sim. Contrast = Simultaneous Contrast illusion (though this illusion is nominally a ""contrast"" illusion, the participants were asked to evaluate the lightness of the target, not the contrast, such that we have categorized it as a lightness illusion. ",,,,,,,,,,,,,

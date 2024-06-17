@@ -45,5 +45,3 @@ write.csv(kappa_data,'../review spreadsheets/final_kappa_review.csv',row.names =
 
 ```
 
-```{r}
-```

@@ -18,15 +18,16 @@ es_results = data.frame()
 ########## SIZE PARADIGMS ############
 paradigm_type <- "Size"
 
-paper <- "Tam et al. 1998"
-grp2m  <- 60.72
-grp2sd <- 11.08
-grp2n  <- 23
-grp1m  <- 58.27
-grp1sd <- 6.29
-grp1n  <- 10
+paper   <- "Tam et al. 1998"
+grp2m   <- 60.72
+grp2sd  <- 11.08
+grp2n   <- 23
+grp1m   <- 58.27
+grp1sd  <- 6.29
+grp1n   <- 10
+n_total <- grp1n + grp2n
 g<-esc_mean_sd(grp1m, grp1sd, grp1n,grp2m, grp2sd, grp2n, es.type = 'g')
-single_row<-cbind(paper,paradigm_type,round(g$es,3),round(g$se,3))
+single_row<-cbind(paper,n_total,paradigm_type,round(g$es,3),round(g$se,3))
 es_results <- rbind(es_results,single_row)
 
 
@@ -36,6 +37,7 @@ paradigm_types = c('Contrast: Orientation Independent', 'Contrast: Orientation D
 paper <- 'Schallmo et al. 2015'
 grp1n = 19
 grp2n = 38
+n_total <- grp1n + grp2n
 nSubj = grp1n + grp2n
 ds = c(.26, NA)
 for (j in seq(paradigm_types)){
@@ -43,7 +45,7 @@ for (j in seq(paradigm_types)){
   d = ds[j]
   g$es<-esc::hedges_g(d,nSubj)
   g$se<-sqrt(esc.vd(g$es,grp1n, grp2n))
-  single_row<-cbind(paper,paradigm_type,round(g$es,3),round(g$se,3))
+  single_row<-cbind(paper,n_total,paradigm_type,round(g$es,3),round(g$se,3))
   es_results <- rbind(es_results,single_row)}
 
 paper <- 'Pokorny et al. 2023'
@@ -54,16 +56,17 @@ raw_data_goodfit_bpcon<-raw_data_goodfit[raw_data_goodfit$grp %in% c('bp','ctrl'
 d = lsr::cohensD(offset ~ grp, raw_data_goodfit_bpcon)
 grp1n = 29
 grp2n = 29
+n_total <- grp1n + grp2n
 g$es<-esc::hedges_g(d, grp1n + grp2n)
 g$se<-sqrt(esc.vd(g$es,grp1n, grp2n))
 paradigm_type = paradigm_types[1]
-single_row<-cbind(paper,paradigm_type,round(g$es,3),round(g$se,3))
+single_row<-cbind(paper,n_total,paradigm_type,round(g$es,3),round(g$se,3))
 es_results <- rbind(es_results,single_row)
 
 f = 4.20
 g <- esc_f(f, grp1n = grp1n, grp2n = grp2n,es.type = 'g')
 paradigm_type = paradigm_types[2]
-single_row<-cbind(paper,paradigm_type,round(g$es,3),round(g$se,3))
+single_row<-cbind(paper,n_total,paradigm_type,round(g$es,3),round(g$se,3))
 es_results <- rbind(es_results,single_row)
 
 
@@ -76,9 +79,10 @@ paradigm_type = "Contrast: Distance Independent"
 # means and SDs
 #across all distances so let's just average cohen's d across the distances to get main effect.
 # Not including 0 or 1 lambda condition because that is not visual context...
-paper <- "Keri et al. 2005"
-grp1n = 22
-grp2n = 20
+paper   <- "Keri et al. 2005"
+grp1n   <- 22
+grp2n   <- 20
+n_total <- grp1n + grp2n
 lambda_means_grp1        <- c( -.110, -.150, -.110, -.06, -.015, -.005)
 lambda_means_grp2        <- c( -.130, -.200, -.145, -.075, -.04, .005)
 lambda_upper_error_grp1  <- c( -.085, -.135, -.088, -.037,  .01, .013)
@@ -95,7 +99,7 @@ for (j in seq(lambda_means_grp1)){
   grp1sd <- lambda_sds_grp1[j]
   grp2sd <- lambda_sds_grp2[j]
   g<-esc_mean_sd(grp1m, grp1sd, grp1n,grp2m, grp2sd, grp2n, es.type = 'g')
-  single_row<-cbind(paper,paradigm_type,round(g$es,3),round(g$se,3))
+  single_row<-cbind(paper,n_total,paradigm_type,round(g$es,3),round(g$se,3))
   es_results <- rbind(es_results,single_row)
 }
 
@@ -104,8 +108,9 @@ for (j in seq(lambda_means_grp1)){
 paradigm_type = 'Contour'
 paper <- 'Pokorny et al. 2021'
 # taken from SPSS output documented in '3/28/19 Updated Gabor Results' Google Slides
-grp1n = 23
-grp2n = 37
+grp1n   <- 23
+grp2n   <- 37
+n_total <- grp1n + grp2n
 # read in raw data from paper
 raw_data        <- data.table::fread('csvs/Gabor Linegraph data.csv')
 raw_data$id     <- seq(nrow(raw_data))
@@ -134,7 +139,7 @@ for (j in seq(indices)){
                        anova_table=list(correction = "HF"))
   f = result$anova_table[3,4]
   g<- esc_f(f, grp1n=grp1n, grp2n=grp2n, es.type = 'g')
-  single_row<-cbind(paper,paradigm_type,round(g$es,3),round(g$se,3))
+  single_row<-cbind(paper,n_total,paradigm_type,round(g$es,3),round(g$se,3))
   es_results <- rbind(es_results,single_row)
 }
 
@@ -144,11 +149,12 @@ paper <- 'Yang et al. 2013'
 #they report a cohen's D for contrast only so let's factor that in first
 paradigm_type = 'Contrast'
 d = .29
-grp1n = 13 # 1 lost outright, 2 excluded for >3 sd. Thus 16-3 = 13
-grp2n = 23 # I'm only counting 22 in the plot, but paper does not report exclusions
+grp1n   <- 13 # 1 lost outright, 2 excluded for >3 sd. Thus 16-3 = 13
+grp2n   <- 23 # I'm only counting 22 in the plot, but paper does not report exclusions
+n_total <- grp1n + grp2n
 g$es <- esc::hedges_g(d,grp1n+grp2n)
 g$se <- sqrt(esc.vd(g$es, grp1n = grp1n, grp2n = grp2n))
-single_row<-cbind(paper,paradigm_type,round(g$es,3),round(g$se,3))
+single_row<-cbind(paper,n_total,paradigm_type,round(g$es,3),round(g$se,3))
 es_results <- rbind(es_results, single_row)
 
 
@@ -170,19 +176,21 @@ for (j in seq(paradigm_types)){
   paradigm_type = paradigm_types[j]
   grp1n = length(bp_vals[[j]])
   grp2n = length(con_vals[[j]])
+  #n_total <- grp1n + grp2n
   grp1m  <- mean(bp_vals[[j]])
   grp2m  <- mean(con_vals[[j]])
   grp1sd <- sd(bp_vals[[j]])
   grp2sd <- sd(con_vals[[j]])
   g<-esc_mean_sd(grp1m, grp1sd, grp1n, grp2m, grp2sd, grp2n, es.type = 'g')
-  single_row<-cbind(paper,paradigm_type,round(-g$es,3),round(g$se,3))
+  single_row<-cbind(paper,n_total,paradigm_type,round(-g$es,3),round(g$se,3))
   es_results <- rbind(es_results, single_row)
 }
 
 paper <- 'Salmela et al. 2021'
 paradigm_types = c('Luminance', 'Contrast')
-grp1n = 38
-grp2n = 29
+grp1n   <- 38
+grp2n   <- 29
+n_total <- grp1n + grp2n
                     #brightness, contrast
 bp_m            <- c(.3,          .035)     
 con_m           <- c(.42,         .19)
@@ -199,12 +207,12 @@ for (j in seq(bp_m)){
   grp1sd <- bp_sd[j]
   grp2sd <- con_sd[j]
   g<-esc_mean_sd(grp1m, grp1sd, grp1n, grp2m, grp2sd, grp2n, es.type = 'g')
-single_row<-cbind(paper,paradigm_type,round(-g$es,3),round(g$se,3))
+single_row<-cbind(paper,n_total,paradigm_type,round(-g$es,3),round(g$se,3))
 es_results <- rbind(es_results, single_row)
 }
 
-colnames(es_results)<-c('Study','Paradigm',"Effect Size","Standard Error")
-write.csv(es_results,paste0(dir2save,'effect_sizes_bp.csv'))
+colnames(es_results)<-c('Study','Total N','Paradigm',"Effect Size","Standard Error")
+write.csv(es_results,paste0(dir2save,'effect_sizes_bp_revised.csv'))
 
 
 
@@ -213,7 +221,10 @@ library(data.table)
 #read in acuity and stimuli location info
 aux_info<-fread(paste0(dir2save,'/Table 2.csv'))
 colnames(aux_info)<-as.character(aux_info[2,])
-aux_info <- aux_info[,c(2,7,8,11)]
+#aux_info <- aux_info[,c(2,7,8,11)]
+aux_info <- aux_info[,c('Authors (Year)','Minimum Acuity Threshold',
+                        'Target Stimulus Location (Foveal or Peripheral)',
+                        "Effect Size (Hedges' G)")]
 #remove blank rows- yes I know this is overkill but the sleeker solutions weren't working
 idx_all = NULL
 for (j in seq(nrow(aux_info))) {
@@ -253,6 +264,6 @@ for (j in (seq(aux_info$`Authors (Year)`))){
 aux_info <- aux_info[2:nrow(aux_info),]
 
 #finally 
-write.csv(aux_info,paste0(dir2save,'aux_info_bp.csv'))
+write.csv(aux_info,paste0(dir2save,'aux_info_bp_revised.csv'))
 
 
